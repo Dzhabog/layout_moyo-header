@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
-  text-transform: uppercase;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
 
-  --hover-color: #00acdc;
+  --blue: #00acdc;
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,16 +36,17 @@ header {
   display: inline-block;
   height: 60px;
   line-height: 60px;
+  text-transform: uppercase;
   text-decoration: none;
   color: black;
 }
 
-.nav__item :hover {
-  color: var(--hover-color);
+.nav__link:hover {
+  color: var(--blue);
 }
 
 .is-active {
-  color: var(--hover-color);
+  color: var(--blue);
   position: relative;
 }
 
@@ -55,6 +56,6 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px solid var(--hover-color);
+  border: 2px solid var(--blue);
   border-radius: 8px;
 }
